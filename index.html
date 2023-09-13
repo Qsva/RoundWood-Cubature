@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roundwood cubature</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="descr grid-item">
+          <h1>Калькулятор кубатуры круглого леса</h1>
+          <p>В графе длина - указать длину бревна для которого, ведется расчет. Только один размер за раз</p>
+          <p>В графе диаметр - через запятую, без пробелов и других символов, указывать диаметр бревна в см.</p>
+          <p><strong>Важно! Разделить между цифрами запятая, без лишних символ, в конце должна быть только цифра, значения только двузначные. Например бревно 200мм. - пишем 20. Калькулятор написан опираясь на данные ГОСТ таблицы для кубатуры бревен, поддерживает длины от 1м. - 8,5м.!</strong></p>
+        </div>
+        <div class="calculator__inputs grid-item">
+          <div class="col"><input type="text" class="length" placeholder='Длина'></div>
+          <div class="col"><textarea type="text" class="diameter" placeholder='Диаметр'></textarea></div>
+          <div class="col"><input type="text" class="colAnswer" placeholder='Кубатура'>  </div>
+          <div class='col'><input type="button" class="btn" value='Посчитать'></div>
+          <div class="col"><input type="button" class="btnEsc" value='Сбросить'></div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

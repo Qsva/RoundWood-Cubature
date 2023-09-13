@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    top: -100px;
+    font-family: 'Kelly Slab', monospace, serif;
+  }
+  
+  input {
+    margin: 5px 0 5px 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    grid-gap: 5px;
+  }
+  
+  .grid-item {
+    width: auto;
+    height: auto;
+    font-size: 1.2vw;
+    color: black;
+    box-sizing: border-box;
+    padding: 15px 5px 15px 5px;
+  }
+  
+  .descr h1 {
+    font-size: 1.4vw;
+  }
+  
+  .descr p {
+    font-size: 1.2vw;
+  }
+  
+  .calculator__inputs input {
+      font-family: 'Kelly Slab', monospace, serif;
+      padding: 2px;
+      border-radius: 10px;
+      text-align: right;
+      font-size: 1.2vw;
+      width: 200px;
+      background: rgba(233, 230, 230, 0.884);
+      color: #000000d8;
+      outline: none;
+      transition: all .3s;
+      box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 
+      1px 1px 5px rgba(233, 230, 230, 0.884);
+  }
+  
+  .col input {
+    border: 1px solid red;
+  }
+
+  textarea {
+    border: 1px solid red;
+    font-family: 'Kelly Slab', monospace, serif;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 1.2vw;
+    width: 200px;
+    background: rgba(233, 230, 230, 0.884);
+    color: #000000d8;
+    outline: none;
+    transition: all .3s;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 
+    1px 1px 5px rgba(233, 230, 230, 0.884);
+    height: 200px;
+  }
+
+  .col .btn {
+    width: 100px;
+    height: auto;
+    background: green;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .col .btnEsc {
+    width: 100px;
+    height: auto;
+    background: red;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .colAnswer {
+    background-color: #fff;
+    border: 1px solid black;
+    max-width: 100px;
+    width: 200px;
+    height: 50px;
+  }
